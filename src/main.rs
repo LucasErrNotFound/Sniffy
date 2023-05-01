@@ -42,10 +42,10 @@ fn main() {
     match &args.command {
         Commands::Startscan(Options) => {
             if Options.packets {
-                println!("Sniffy is now sniffing packets...");
+                packets::scan_packets();
             }
             else if Options.ports {
-                println!("Sniffy is now sniffing ports...");
+                ports::scan_ports();
             }
             else {
                 println!("No scan options specified");
