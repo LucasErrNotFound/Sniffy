@@ -47,16 +47,11 @@ fn main() {
             else if Options.ports {
                 println!("Sniffy is now sniffing ports...");
             }
-
             else {
                 println!("No scan options specified");
             }
         }
     }
-
-    // if args.packets.is_some() && args.startscan {
-    //     println!("Scanning for packets...");
-    // }
 
     // for _ in 0..args.count {
     //     println!("Hello {}!", args.startscan)
